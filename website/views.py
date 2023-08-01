@@ -19,6 +19,7 @@ def home(request):
 			return render(request, 'home.html', {'lang_list':lang_list, 'response':code, 'code':code, 'lang':lang})			
 		else:
 			# OpenAI Key
+			
 			openai.api_key = "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"
 			# Create OpenAI Instance
 			openai.Model.list()
